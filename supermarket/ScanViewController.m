@@ -17,6 +17,7 @@
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
 @property (nonatomic) BOOL isPresentingProduct;
 @property (nonatomic, strong) ScanResultView *resultView;
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 @end
 
 @implementation ScanViewController
@@ -66,34 +67,44 @@
     
     [_captureSession startRunning];
     
+    self.cancelButton.alpha = 1.0;
+    
     return YES;
 }
 
 -(void)stopReading{
+    self.cancelButton.alpha = 0.0;
     [_captureSession stopRunning];
     _captureSession = nil;
     [_videoPreviewLayer removeFromSuperlayer];
 }
 
 - (void)presentProductWithCode:(NSString *)barCode {
+    [self stopReading];
     dispatch_async(dispatch_get_main_queue(), ^{
         self.isPresentingProduct = YES;
         self.resultView = [[ScanResultView alloc]init];
         self.resultView.center = self.view.center;
         self.resultView.delegate = self;
         [self.view addSubview:self.resultView];
+        [NSTimer scheduledTimerWithTimeInterval:3.0
+                                         target:self.resultView
+                                       selector:@selector(shopItemFound:)
+                                       userInfo:nil
+                                        repeats:NO];
     });
 }
 
 #pragma mark - ScanResultViewDelegate
 
 - (void)scanAgain {
+    [self startReading];
     [self.resultView removeFromSuperview];
     self.resultView = nil;
     self.isPresentingProduct = NO;
 }
 
-- (void)addProduct {
+- (void)addShopItem {
     [self.delegate backFromViewController:self withObject:nil];
 }
 

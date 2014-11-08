@@ -10,9 +10,10 @@
 
 @protocol ScanResultViewDelegate <NSObject>
 - (void)scanAgain;
-- (void)addProduct;
+- (void)addShopItem;
 @end
 
 @interface ScanResultView : UIView
 @property (nonatomic, weak) id <ScanResultViewDelegate> delegate;
+- (void)shopItemFound:(NSDictionary *)item;
 @end

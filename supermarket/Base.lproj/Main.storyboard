@@ -25,6 +25,25 @@
             </objects>
             <point key="canvasLocation" x="635" y="446.99999999999994"/>
         </scene>
+        <!--Promos-->
+        <scene sceneID="XVa-2p-0Xo">
+            <objects>
+                <viewController id="Cnc-kp-b4B" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MSN-g0-FOG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qvk-7T-F9f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yzp-4G-SJV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Promos" id="7Br-af-8C3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZdC-Uo-Tqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635" y="1127"/>
+        </scene>
         <!--Lista-->
         <scene sceneID="099-Yr-f4h">
             <objects>
@@ -71,7 +90,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmz-Td-gj6">
-                                                    <rect key="frame" x="50" y="56" width="42" height="21"/>
+                                                    <rect key="frame" x="54" y="65" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -79,10 +98,10 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" red="0.045664558559999999" green="1" blue="0.152628398" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="Fmz-Td-gj6" firstAttribute="leading" secondItem="PKs-EM-JeD" secondAttribute="leadingMargin" constant="42" id="2dC-9W-SVw"/>
-                                            <constraint firstItem="Fmz-Td-gj6" firstAttribute="top" secondItem="PKs-EM-JeD" secondAttribute="topMargin" constant="48" id="FgI-cd-U9w"/>
+                                            <constraint firstAttribute="centerY" secondItem="Fmz-Td-gj6" secondAttribute="centerY" id="Gp0-Sg-GI4"/>
+                                            <constraint firstAttribute="centerX" secondItem="Fmz-Td-gj6" secondAttribute="centerX" id="KK4-eh-QjN"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="titleLabel" destination="Fmz-Td-gj6" id="gcF-VC-dpc"/>
@@ -160,6 +179,7 @@
                     </view>
                     <connections>
                         <outlet property="cameraView" destination="Xdq-Ga-1Ta" id="o8e-tc-S0b"/>
+                        <outlet property="cancelButton" destination="A54-FK-44T" id="OMd-kH-Rbd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pl-lp-nyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -177,8 +197,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="qGd-Qi-Cs9" kind="relationship" relationship="viewControllers" id="wA0-lm-bpO"/>
                         <segue destination="EXq-Kq-DbR" kind="relationship" relationship="viewControllers" id="oeV-su-Ezf"/>
+                        <segue destination="qGd-Qi-Cs9" kind="relationship" relationship="viewControllers" id="EY0-8F-6bz"/>
+                        <segue destination="Cnc-kp-b4B" kind="relationship" relationship="viewControllers" id="Jsf-Qb-X1h"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rdn-fy-IHo" userLabel="First Responder" sceneMemberID="firstResponder"/>

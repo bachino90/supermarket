@@ -11,7 +11,7 @@
 #import "ScanViewController.h"
 #import "DismissModalProtocol.h"
 
-@interface ShoppingListViewController () <DismissModalProtocol, UICollectionViewDataSource, UICollectionViewDelegate>
+@interface ShoppingListViewController () <DismissModalProtocol, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray *shopList;
 @end
@@ -72,6 +72,21 @@
     NSString *shopItem = [self.shopList objectAtIndex:indexPath.row];
     [cell.titleLabel setText:shopItem];
     return cell;
+}
+
+#pragma mark – UICollectionViewDelegateFlowLayout
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    width -= 30.0;
+    width = width/2;
+    CGSize retval = CGSizeMake(width, 175);
+    return retval;
+}
+
+- (UIEdgeInsets)collectionView:
+(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(10, 10, 10, 10);
 }
 
 @end
