@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EBE84281A0D9124000822DD /* ShopItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE84271A0D9124000822DD /* ShopItemCollectionViewCell.m */; };
 		0EF47B581A0BDCC700A31BAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF47B571A0BDCC700A31BAF /* main.m */; };
 		0EF47B5B1A0BDCC700A31BAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF47B5A1A0BDCC700A31BAF /* AppDelegate.m */; };
 		0EF47B5E1A0BDCC700A31BAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF47B5D1A0BDCC700A31BAF /* ViewController.m */; };
@@ -14,6 +15,9 @@
 		0EF47B631A0BDCC800A31BAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF47B621A0BDCC800A31BAF /* Images.xcassets */; };
 		0EF47B661A0BDCC800A31BAF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF47B641A0BDCC800A31BAF /* LaunchScreen.xib */; };
 		0EF47B721A0BDCC800A31BAF /* supermarketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF47B711A0BDCC800A31BAF /* supermarketTests.m */; };
+		0EF47B7D1A0BF2DB00A31BAF /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF47B7C1A0BF2DB00A31BAF /* ScanViewController.m */; };
+		0EF47B811A0C07FA00A31BAF /* ShoppingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF47B801A0C07FA00A31BAF /* ShoppingListViewController.m */; };
+		0EF47B841A0C098700A31BAF /* ScanResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF47B831A0C098700A31BAF /* ScanResultView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EBE84261A0D9124000822DD /* ShopItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopItemCollectionViewCell.h; sourceTree = "<group>"; };
+		0EBE84271A0D9124000822DD /* ShopItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopItemCollectionViewCell.m; sourceTree = "<group>"; };
 		0EF47B521A0BDCC700A31BAF /* supermarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = supermarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF47B561A0BDCC700A31BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EF47B571A0BDCC700A31BAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +46,13 @@
 		0EF47B6B1A0BDCC800A31BAF /* supermarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = supermarketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF47B701A0BDCC800A31BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EF47B711A0BDCC800A31BAF /* supermarketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = supermarketTests.m; sourceTree = "<group>"; };
+		0EF47B7B1A0BF2DB00A31BAF /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		0EF47B7C1A0BF2DB00A31BAF /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		0EF47B7E1A0C077A00A31BAF /* DismissModalProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissModalProtocol.h; sourceTree = "<group>"; };
+		0EF47B7F1A0C07FA00A31BAF /* ShoppingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingListViewController.h; sourceTree = "<group>"; };
+		0EF47B801A0C07FA00A31BAF /* ShoppingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingListViewController.m; sourceTree = "<group>"; };
+		0EF47B821A0C098700A31BAF /* ScanResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanResultView.h; sourceTree = "<group>"; };
+		0EF47B831A0C098700A31BAF /* ScanResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanResultView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EBE84291A0D9134000822DD /* Shopping List */ = {
+			isa = PBXGroup;
+			children = (
+				0EF47B7F1A0C07FA00A31BAF /* ShoppingListViewController.h */,
+				0EF47B801A0C07FA00A31BAF /* ShoppingListViewController.m */,
+				0EBE84261A0D9124000822DD /* ShopItemCollectionViewCell.h */,
+				0EBE84271A0D9124000822DD /* ShopItemCollectionViewCell.m */,
+			);
+			name = "Shopping List";
+			sourceTree = "<group>";
+		};
+		0EBE842A1A0D9144000822DD /* Scan View */ = {
+			isa = PBXGroup;
+			children = (
+				0EF47B7B1A0BF2DB00A31BAF /* ScanViewController.h */,
+				0EF47B7C1A0BF2DB00A31BAF /* ScanViewController.m */,
+				0EF47B821A0C098700A31BAF /* ScanResultView.h */,
+				0EF47B831A0C098700A31BAF /* ScanResultView.m */,
+			);
+			name = "Scan View";
+			sourceTree = "<group>";
+		};
+		0EBE842B1A0D914F000822DD /* Protocols and Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0EF47B7E1A0C077A00A31BAF /* DismissModalProtocol.h */,
+			);
+			name = "Protocols and Categories";
+			sourceTree = "<group>";
+		};
 		0EF47B491A0BDCC700A31BAF = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +128,9 @@
 				0EF47B5A1A0BDCC700A31BAF /* AppDelegate.m */,
 				0EF47B5C1A0BDCC700A31BAF /* ViewController.h */,
 				0EF47B5D1A0BDCC700A31BAF /* ViewController.m */,
+				0EBE842A1A0D9144000822DD /* Scan View */,
+				0EBE84291A0D9134000822DD /* Shopping List */,
+				0EBE842B1A0D914F000822DD /* Protocols and Categories */,
 				0EF47B5F1A0BDCC700A31BAF /* Main.storyboard */,
 				0EF47B621A0BDCC800A31BAF /* Images.xcassets */,
 				0EF47B641A0BDCC800A31BAF /* LaunchScreen.xib */,
@@ -221,7 +267,11 @@
 			files = (
 				0EF47B5E1A0BDCC700A31BAF /* ViewController.m in Sources */,
 				0EF47B5B1A0BDCC700A31BAF /* AppDelegate.m in Sources */,
+				0EBE84281A0D9124000822DD /* ShopItemCollectionViewCell.m in Sources */,
+				0EF47B841A0C098700A31BAF /* ScanResultView.m in Sources */,
+				0EF47B811A0C07FA00A31BAF /* ShoppingListViewController.m in Sources */,
 				0EF47B581A0BDCC700A31BAF /* main.m in Sources */,
+				0EF47B7D1A0BF2DB00A31BAF /* ScanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +396,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = supermarket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = supermarket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -414,6 +466,7 @@
 				0EF47B771A0BDCC800A31BAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EF47B781A0BDCC800A31BAF /* Build configuration list for PBXNativeTarget "supermarketTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +475,7 @@
 				0EF47B7A1A0BDCC800A31BAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
